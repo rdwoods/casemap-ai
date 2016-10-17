@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DiscipleConnect.iml" filepath="$PROJECT_DIR$/.idea/modules/DiscipleConnect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DiscipleConnect_main.iml" filepath="$PROJECT_DIR$/.idea/modules/DiscipleConnect_main.iml" group="DiscipleConnect" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DiscipleConnect_test.iml" filepath="$PROJECT_DIR$/.idea/modules/DiscipleConnect_test.iml" group="DiscipleConnect" />
+    </modules>
+  </component>
+</project>

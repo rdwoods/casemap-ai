@@ -5,8 +5,6 @@ import com.casemapai.dataconnect.GetMatterQuery
 import com.casemapai.dataconnect.GetUserQuery
 import com.casemapai.dataconnect.ListAnalysisResultsQuery
 import com.casemapai.dataconnect.ListMattersQuery
-import com.casemapai.dataconnect.execute
-import com.casemapai.dataconnect.instance
 import com.google.firebase.Timestamp
 import java.util.Date
 import java.util.UUID

@@ -1,14 +1,11 @@
 package com.casemapai.ui.matter
 
-import com.casemapai.core.CurrentUser
 import com.casemapai.dataconnect.GetMatterQuery
 import com.casemapai.dataconnect.GetUserQuery
-import com.casemapai.domain.model.Matter
 import com.casemapai.domain.usecase.SaveMatterUseCase
 import com.casemapai.ui.mvi.BaseViewModel
 import com.google.firebase.Timestamp
 import dagger.hilt.android.lifecycle.HiltViewModel
-import java.util.Date
 import javax.inject.Inject
 
 @HiltViewModel

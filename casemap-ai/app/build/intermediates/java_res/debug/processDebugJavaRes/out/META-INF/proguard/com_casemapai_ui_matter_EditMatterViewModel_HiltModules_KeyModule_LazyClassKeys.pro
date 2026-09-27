@@ -1,0 +1,1 @@
+-keep,allowobfuscation,allowshrinking class com.casemapai.ui.matter.EditMatterViewModel

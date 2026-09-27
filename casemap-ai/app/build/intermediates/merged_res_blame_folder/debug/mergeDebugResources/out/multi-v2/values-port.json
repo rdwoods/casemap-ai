@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.casemapai.app-mergeDebugResources-78:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/rdwoods/.gradle/caches/9.6.0/transforms/789d6869ca6cff171f589bf77a120d81/transformed/appcompat-1.7.0/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

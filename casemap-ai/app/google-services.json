@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "130951299581",
+    "project_id": "casemapai",
+    "storage_bucket": "casemapai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130951299581:android:89c7adf82581a5f0dc5994",
+        "android_client_info": {
+          "package_name": "com.casemapai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBImEuIHQ75VvHN6CnF2bAEFQRUW9jgF2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

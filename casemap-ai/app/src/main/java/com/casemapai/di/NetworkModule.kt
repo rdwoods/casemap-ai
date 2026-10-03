@@ -79,19 +79,12 @@ object NetworkModule {
             .cache(cache)
             .addInterceptor { chain ->
                 try {
-                    // Block for up to 5 seconds to get the latest config
+                    // Block for up to 5 seconds to fetch latest remote config if needed
                     Tasks.await(remoteConfig.fetchAndActivate(), 5, TimeUnit.SECONDS)
                 } catch (e: Exception) {
                     Log.w(TAG, "Remote Config fetch failed or timed out", e)
                 }
-
-                val appApiKey = remoteConfig.getString("app_api_key")
-
-                val url = chain.request().url.newBuilder()
-                    .addQueryParameter("api_key", appApiKey)
-                    .addQueryParameter("format", "json")
-                    .build()
-                chain.proceed(chain.request().newBuilder().url(url).build())
+                chain.proceed(chain.request())
             }
             .addInterceptor(loggingInterceptor)
             .addInterceptor(CacheInterceptor())
@@ -105,7 +98,7 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(moshi: Moshi, okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://generativelanguage.googleapis.com/")
+            .baseUrl("https://us-central1-casemapai.cloudfunctions.net/")
             .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()

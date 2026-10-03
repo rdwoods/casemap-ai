@@ -1,5 +1,3 @@
 package com.casemapai.data.repository
 
-interface ApiKeyProvider {
-    suspend fun getApiKey(): String
-}
+// Obsolete: API key management moved to Google Secret Manager on server.

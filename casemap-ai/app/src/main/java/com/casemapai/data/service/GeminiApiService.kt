@@ -1,17 +1,14 @@
 package com.casemapai.data.service
 
-import com.casemapai.data.remote.dto.GeminiGenerateContentRequestDto
-import com.casemapai.data.remote.dto.GeminiGenerateContentResponseDto
-import com.casemapai.data.remote.dto.GeminiResponseDto
+import com.casemapai.data.remote.dto.AnalyzeRequestDto
+import com.casemapai.data.remote.dto.AnalyzeResponseDto
 import retrofit2.http.Body
 import retrofit2.http.POST
-import retrofit2.http.Query
 
 interface GeminiApiService {
 
-    @POST("v1/models/gemini-pro:generateContent")
+    @POST("analyzeWithGemini")
     suspend fun generateContent(
-        @Query("key") apiKey: String,
-        @Body request: GeminiGenerateContentRequestDto
-    ): GeminiGenerateContentResponseDto
+        @Body request: AnalyzeRequestDto
+    ): AnalyzeResponseDto
 }
